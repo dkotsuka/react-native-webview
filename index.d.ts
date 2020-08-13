@@ -16,6 +16,11 @@ declare class WebView extends Component<WebViewProps> {
      * Go forward one page in the webview's history.
      */
     goForward: () => void;
+    
+    /**
+     * Send message to current page.
+     */
+    postMessage: (message: string) => void;
 
     /**
      * Reloads the current page.
